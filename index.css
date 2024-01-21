@@ -1,0 +1,107 @@
+body {
+    font-family: 'Arial', sans-serif;
+    overflow-y: hidden;
+}
+
+.home{
+    background-color: rgba(24, 21, 21, 0.1);
+}
+.login{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(background.avif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 10%;
+}
+
+.container{
+    margin-top: 20px;
+}
+
+a:hover{
+    color: rgba(123, 33, 233, 0.765);
+}
+
+.submit{
+    width: 70px;
+    height: 40px;
+    box-shadow: 0 4px 8px rgba(254, 252, 252, 0.407); 
+    border-radius: 6px;
+}
+
+.submit:hover{
+    width: 75px;
+    height: 45px;
+
+}
+
+.inputbox{
+    width: 15%;
+    height: 30px;
+    border-radius: 4px;
+}
+.price{
+    border: none !important;
+    box-shadow: none !important;
+    margin: 0px !important;
+    box-shadow: none !important;
+    height: 50px !important;
+}
+
+.container-home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-height: 100vh;
+    overflow-y: auto;
+    margin-top: 40px;
+}
+.container-home div{
+    width: 50%;
+    height: 100px;
+    background-color: #fff; 
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    position: relative;
+}
+
+.dish:hover{
+    width: 52%;
+    height: 130px;
+    padding: auto;
+    transition: 0.1s ease-in-out;
+}
+.img {
+    float: right;
+}
+
+.title {
+    text-align: center;
+    color: #d81010; 
+    text-shadow: 2px 2px 4px rgba(243, 62, 62, 0.5); 
+}
+
+.items{
+    text-align: center;
+}
+.rating {
+    background-color: green;
+    padding: 8px 12px; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10px;
+    cursor: auto;
+}
+
+.reviews{
+    margin-left: 47%;
+}
