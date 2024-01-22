@@ -31,6 +31,7 @@ a:hover{
     height: 40px;
     box-shadow: 0 4px 8px rgba(254, 252, 252, 0.407); 
     border-radius: 6px;
+    margin-bottom: 20px;
 }
 
 .submit:hover{
@@ -104,4 +105,8 @@ a:hover{
 
 .reviews{
     margin-left: 47%;
+}
+
+.drop-down{
+    margin-left: 10px;
 }
