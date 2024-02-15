@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <canvas id="canva" width="800" height="800"></canvas>
+</body>
+<script type="text/javascript">
+    window.onload = function (){
+        let canvas = document.getElementById('canva')
+        let context = canvas.getContext('2d')
+        context.lineWidth = 5
+        context.strokeStyle = 'black'
+        let gradientColorsRect = context.createLinearGradient(250,200,200,30)
+        let gradientColors = context.createRadialGradient(150, 300, 0, 160, 190, 200)
+        // context.moveTo(50,50)
+        // context.lineTo(0,50)
+        // context.arc(150, 150, 80, 1.2 * Math.PI, 1.8 * Math.PI, false)//centerX, centerY, radius, starting angle, ending angle, counterClockwise
+        
+        context.beginPath()
+        context.rect(50,70,200,100)
+        // context.fillStyle = 'orange'
+        // context.fill()
+        gradientColorsRect.addColorStop(1, 'green')
+        gradientColorsRect.addColorStop(0.5, 'cyan')
+        gradientColorsRect.addColorStop(0, 'green')
+        context.fillStyle = gradientColorsRect
+        context.fill()
+        context.stroke()
+        
+        context.beginPath()
+        context.arc(150,300,70,0,2*Math.PI, false)
+        gradientColors.addColorStop(0, '#8ED6FF')
+        gradientColors.addColorStop(1, '#004CB3')
+        context.fillStyle = gradientColors
+        context.fill()
+        context.stroke()
+
+        context.beginPath()
+        context.font = '20px times new roman'
+        // context.textAlign = "center"
+        context.textBaseline = "middle"
+        context.fillStyle = "orange"
+        context.strokeStyle = "red"
+        context.strokeText('Top of the morning!', 350, 100)
+        context.fillText('Top of the morning!', 350, 100)
+        context.stroke()
+    }
+</script>
+</html>
